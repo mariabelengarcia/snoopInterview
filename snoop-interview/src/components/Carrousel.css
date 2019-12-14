@@ -1,0 +1,28 @@
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.carousel-container {
+    background-color: rgb(255, 0, 0);
+    height: 20rem;
+    padding-top: 2rem;
+    color: white;
+}
+
+.carousel-img {
+    width: 10rem;
+    border-radius: .4rem;
+    border: .3rem solid white;
+    margin-top: 2rem;
+    height: 8rem;
+}
+
+.carousel-img-detail-span {
+    padding: .1rem 3.7rem;
+    border-radius: .2rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: black;
+    background-color: lightgray;
+}
