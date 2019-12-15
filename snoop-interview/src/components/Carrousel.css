@@ -8,6 +8,8 @@
     height: 20rem;
     padding-top: 2rem;
     color: white;
+    position: relative;
+    z-index: 10;
 }
 
 .carousel-img {
@@ -24,5 +26,18 @@
     font-weight: 500;
     font-size: 1.3rem;
     color: black;
-    background-color: lightgray;
+    background-color: #eaeaea;
 }
+
+.diagonal-red-carrousel-footer {
+    right: -5rem; 
+    z-index: 10;
+    width: 105%;
+    height: 13rem;
+    position: relative;
+    background-color: red;
+    -webkit-transform: translateY(20px) translateX(5px) rotate(+5deg) !important;
+    top: -7rem;
+    left: -2rem;
+}
+  

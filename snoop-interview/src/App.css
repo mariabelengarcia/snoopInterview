@@ -39,6 +39,55 @@
     display: inline-flex;
 }
 
+.white-red-secondary-page-footer {
+  right: -5rem;
+  z-index: 10;
+  width: 130rem;
+  height: 10rem;
+  position: relative;
+  background-color: white;
+  padding: inherit;
+  -webkit-transform: translateY(20px) translateX(5px) rotate(+13deg) !important;
+  top: 5rem;
+  left: -2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.white-red-secondary-page-footer-vertical {
+  right: -5rem;
+  z-index: 10;
+  width: 124rem;
+  height: 23rem;
+  position: relative;
+  background-color: white;
+  padding: inherit;
+  -webkit-transform: translateY(20px) translateX(5px) rotate(+78deg) !important;
+  top: -11rem;
+  left: -12rem;
+  position: relative;
+  z-index: 1;
+}
+
+.more-img {
+  position: relative;
+  top: 27rem;
+  left: .5rem;
+  width: 4rem;
+}
+
+.secondary-img-container {
+  height: 40rem;
+}
+
+img.secondary-img {
+  width: 100%;
+  float: left;
+  margin-left: -1rem;
+  position: relative;
+  top: -45rem;
+}
+
 .main-page-info-box-span {
   color: red;
   text-align: left;
@@ -48,10 +97,25 @@
 
 .main-img {
   position: relative;
-  left: 11rem;
-  opacity: 0.8;
-  width: 50rem;
+  left: 9rem;
+  opacity: 0.2;
+  width: 82.45rem;
+  box-shadow: 0 0 20px 20px red;
+  box-shadow: -20px 1px 20px 20px red inset;
+  background-color: red;
+  filter: blur(3px);
 }
+
+.right-bar {
+  background-color: white;
+    max-width: 6rem !important;
+    right: -4.6rem;
+    position: relative;
+    padding: 0rem;
+    margin: 0;
+    z-index: 11;
+}
+
 
 @keyframes App-logo-spin {
   from {
