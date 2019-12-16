@@ -36,7 +36,7 @@
     height: 13rem;
     position: relative;
     background-color: red;
-    -webkit-transform: translateY(20px) translateX(5px) rotate(+5deg) !important;
+    transform: translateY(20px) translateX(5px) rotate(+5deg) !important;
     top: -7rem;
     left: -2rem;
 }
