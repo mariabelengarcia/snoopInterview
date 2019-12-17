@@ -33,20 +33,21 @@ class Carrousel extends Component {
         itemsArray: state.itemsArray
     }));
   }
-  render() {
+  render(props) {
   return (
-    <Container fluid className='carousel-container' >
-        <Row style={{width: '80%', margin: 'auto'}}>
-            <h1>Nullam sed urna justo.</h1>
+    <Container fluid className='carousel-container' style={{backgroundColor: this.props.backgroundColor}}>
+        <Row style={{width: '80%', margin: 'auto', fontSize: '3.2rem', fontFamily: 'Barlow',
+              position: 'relative', left: '6rem'}}>
+            <span>Nullam sed urna justo.</span>
         </Row>
         <Row style={{width: '80%', margin: 'auto', position: 'relative', zIndex: '11'}}>
-            <Button variant="outline-light" style={{backgroundColor: 'rgba(255,0,0,1)', border: 'none', fontSize: '3rem' , marginTop: '2rem'}}  onClick={this.handleBack}> {`<`} </Button>
+            <Button variant="outline-light" style={{backgroundColor: this.props.backgroundColor, border: 'none', fontSize: '3rem' , marginTop: '2rem'}}  onClick={this.handleBack}> {`<`} </Button>
             { this.state.itemsArray.map(item => 
                 <Col>
                     {this.getBox(item)}
                 </Col>
             )}
-            <Button variant="outline-light" style={{backgroundColor: 'rgba(255,0,0,1)', border: 'none', fontSize: '3rem', marginTop: '2rem'}}   onClick={this.handleNext}> {`>`} </Button>
+            <Button variant="outline-light" style={{backgroundColor: this.props.backgroundColor, border: 'none', fontSize: '3rem', marginTop: '2rem'}}   onClick={this.handleNext}> {`>`} </Button>
 	    </Row>
         <Row style={{width: '74.5%', margin: 'auto', marginTop: '.8rem', position: 'relative', zIndex: '11'}}>
              { this.state.itemsArray.map(item => 
@@ -57,7 +58,7 @@ class Carrousel extends Component {
                 </Col>
             )}
         </Row>
-        <Row className="diagonal-red-carrousel-footer">
+        <Row className="diagonal-red-carrousel-footer" style={{backgroundColor: this.props.backgroundColor}}>
         </Row>
     </Container>
   );
